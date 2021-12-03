@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customers</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<form action="/customers/update/<%=id%>" method="post" name="form1">
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Nom</label>
+    <input type="text" class="form-control" name="name" id="nom_client" value="" placeholder="Nom">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Prénom</label>
+    <input type="text" name="surname" class="form-control" id="prenom_client" placeholder="Prénom" value="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">E-mail</label>
+    <input type="text" name="email" class="form-control" id="email_client" aria-describedby="emailHelp" placeholder="E-mail" value="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Code Postal</label>
+    <input type="text" name="cp" class="form-control" id="CP_client" placeholder="Code Postal" value="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Adresse</label>
+    <input type="text" name="address" class="form-control" id="adresse_client" placeholder="Adresse" value="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Ville</label>
+    <input type="text" name="city" class="form-control" id="ville_client" placeholder="Ville" value="">
+  </div><div class="form-group">
+    <label for="exampleInputEmail1">Pays</label>
+    <input type="text" name="country" class="form-control" id="pays_client" aria-describedby="emailHelp" placeholder="Pays" value="">
+  </div>
+ 
+<button type="submit" class="btn btn-info">Update</button>
+</form>
+</body>
+</html>
